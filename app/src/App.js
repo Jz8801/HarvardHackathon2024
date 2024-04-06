@@ -27,11 +27,13 @@ function App() {
             type="text"
             value={features}
             onChange={e => setFeatures(e.target.value)}
-            placeholder="Enter features separated by commas"
+            placeholder="Enter: Age, Sex, INF_ANAM, STENOK_AN, FK_STENOK..."
+            style={{ width: '500px' }}
           />
           <button type="submit">Predict</button>
         </form>
         {prediction && <h3>Prediction: {prediction}</h3>}
+        <p>Based on the inputted health data, you are not at risk for complications following a heart attack. It is always recommended to reach out to a health-care professional regarding medical advice. </p>
       </header>
     </div>
   );
